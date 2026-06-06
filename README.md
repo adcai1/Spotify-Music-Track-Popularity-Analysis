@@ -3,7 +3,6 @@ An analysis of Spotify track popularity based on audio features and artist size.
 
 **Andy Cai**
 
----
 
 # Introduction
 
@@ -32,7 +31,6 @@ The primary question explored in this project is:
 
 **Do tracks from artists with larger follower counts tend to be more popular, and can track popularity be predicted using information available at release time?**
 
----
 
 # Data Cleaning and Exploratory Data Analysis
 
@@ -51,11 +49,13 @@ After merging the datasets, 4,961 of the 5,000 selected tracks successfully matc
 
 ### Head of Cleaned DataFrame
 
-```python
-merged.head()
-```
-print(merged.head().to_markdown(index=False))
-print(merged.head().to_markdown(index=False))
+| artists                  | track_name                        |   popularity |   duration_ms | release_date        | explicit   |   danceability |   energy |   key |   loudness |   mode |   speechiness |   acousticness |   instrumentalness |   liveness |   valence |   tempo |   time_signature | track_genre   | primary_artist   |   release_year |   decade | tempo_missing   |
+|:-------------------------|:----------------------------------|-------------:|--------------:|:--------------------|:-----------|---------------:|---------:|------:|-----------:|-------:|--------------:|---------------:|-------------------:|-----------:|----------:|--------:|-----------------:|:--------------|:-----------------|---------------:|---------:|:----------------|
+| Dan + Shay;Justin Bieber | 10,000 Hours (with Justin Bieber) |           78 |        167693 | NaT                 | False      |          0.654 |    0.63  |    10 |     -4.644 |      1 |        0.0259 |          0.153 |           0        |     0.111  |     0.43  |  89.991 |                4 | country       | Dan + Shay       |            nan |      nan | False           |
+| Luke Bryan               | Country On                        |            0 |        236455 | 1966-01-01 00:00:00 | False      |          0.52  |    0.751 |     5 |     -5.064 |      1 |        0.0551 |          0.171 |           7.4e-06  |     0.0624 |     0.519 | 156.044 |                4 | country       | Luke Bryan       |           1966 |     1960 | False           |
+| Thomas Rhett             | Die A Happy Man                   |            1 |        228320 | NaT                 | False      |          0.59  |    0.389 |     2 |     -9.245 |      1 |        0.0387 |          0.411 |           1.48e-06 |     0.117  |     0.389 | nan     |                4 | country       | Thomas Rhett     |            nan |      nan | True            |
+| Zach Bryan               | Something in the Orange           |            3 |        228013 | NaT                 | False      |          0.369 |    0.192 |     4 |    -12.151 |      0 |        0.04   |          0.555 |           8.35e-06 |     0.0954 |     0.148 | nan     |                3 | country       | Zach Bryan       |            nan |      nan | True            |
+| Zach Bryan               | Something in the Orange           |            4 |        228013 | 1965-01-01 00:00:00 | False      |          0.369 |    0.192 |     4 |    -12.151 |      0 |        0.04   |          0.555 |           8.35e-06 |     0.0954 |     0.148 | 175.212 |                3 | country       | Zach Bryan       |           1965 |     1960 | False           |
 
 ## Univariate Analysis
 
