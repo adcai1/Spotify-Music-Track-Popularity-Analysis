@@ -90,6 +90,8 @@ Head of merged dataframe with the columns track_name, track_popularity, track_ge
     height="600"
     frameborder="0">
 </iframe>
+
+
 Track popularity is highly right-skewed, with a substantial spike at zero. Approximately **14.05% of tracks** and **43.09% of artists** have popularity scores equal to zero. This suggests that a large portion of songs and artists receive little measurable engagement on Spotify.
 
 Because popularity is the primary outcome of interest, these zero-valued observations were retained in the dataset.
