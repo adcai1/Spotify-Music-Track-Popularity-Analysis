@@ -48,7 +48,8 @@ Several preprocessing steps were performed before analysis:
 After merging the datasets, 4,961 of the 5,000 selected tracks successfully matched an artist record, resulting in less than 1% data loss.
 
 ### Head of Cleaned DataFrame
-
+| Five_Genres | cleaned dataframe including the selected five genres |
+| ----------- | ----------- |
 | artists                  | track_name                        |   popularity |   duration_ms | release_date        | explicit   |   danceability |   energy |   key |   loudness |   mode |   speechiness |   acousticness |   instrumentalness |   liveness |   valence |   tempo |   time_signature | track_genre   | primary_artist   |   release_year |   decade | tempo_missing   |
 |:-------------------------|:----------------------------------|-------------:|--------------:|:--------------------|:-----------|---------------:|---------:|------:|-----------:|-------:|--------------:|---------------:|-------------------:|-----------:|----------:|--------:|-----------------:|:--------------|:-----------------|---------------:|---------:|:----------------|
 | Dan + Shay;Justin Bieber | 10,000 Hours (with Justin Bieber) |           78 |        167693 | NaT                 | False      |          0.654 |    0.63  |    10 |     -4.644 |      1 |        0.0259 |          0.153 |           0        |     0.111  |     0.43  |  89.991 |                4 | country       | Dan + Shay       |            nan |      nan | False           |
